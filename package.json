@@ -27,9 +27,20 @@
     "express": "^5.1.0",
     "express-handlebars": "^8.0.1"
   },
+  "lint-staged": {
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    } 
+  },
   "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.0",
     "morgan": "^1.10.0",
     "node-sass": "^9.0.0",
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.1.10",
+    "prettier": "^3.5.3"
   }
 }
