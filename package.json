@@ -25,7 +25,10 @@
   "description": "",
   "dependencies": {
     "express": "^5.1.0",
-    "express-handlebars": "^8.0.1"
+    "express-handlebars": "^8.0.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.16.0",
+    "mongoose-slug-updater": "^3.3.0"
   },
   "lint-staged": {
     "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
@@ -33,7 +36,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
-    } 
+    }
   },
   "devDependencies": {
     "husky": "^9.1.7",
